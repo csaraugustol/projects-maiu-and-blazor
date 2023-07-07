@@ -1,0 +1,95 @@
+2023-07-07 16:10:14.907 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:10:14.940 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:10:14.944 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:10:14.945 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:10:14.945 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:10:28.755 -03:00 [INF] Made call to Weath Endpoint
+2023-07-07 16:10:28.758 -03:00 [ERR] Fatal Error Ocurred.
+System.Exception: This is our loging test exception
+   at BookStoreApp.API.Controllers.WeatherForecastController.Get() in D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\Controllers\WeatherForecastController.cs:line 27
+2023-07-07 16:10:28.781 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: This is our loging test exception
+   at BookStoreApp.API.Controllers.WeatherForecastController.Get() in D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method3(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-07 16:30:30.166 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:30:30.204 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:30:30.209 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:30:30.210 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:30:30.211 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:31:34.996 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:31:35.035 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:31:35.040 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:31:35.040 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:31:35.041 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:32:44.956 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:32:44.985 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:32:44.990 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:32:44.991 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:32:44.992 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:34:06.591 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:34:06.624 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:34:06.627 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:34:06.628 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:34:06.629 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:35:59.981 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:36:00.016 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:36:00.022 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:36:00.023 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:36:00.026 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:36:11.645 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:36:11.673 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:36:11.677 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:36:11.678 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:36:11.679 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:36:15.457 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:36:15.495 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:36:15.501 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:36:15.503 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:36:15.504 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:36:18.236 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:36:18.278 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:36:18.282 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:36:18.283 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:36:18.284 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:38:32.836 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:38:32.869 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:38:32.876 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:38:32.878 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:38:32.879 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:41:03.415 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:41:03.451 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:41:03.458 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:41:03.461 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:41:03.463 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:42:10.134 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:42:10.192 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:42:10.202 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:42:10.203 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:42:10.204 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:44:37.451 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:44:37.506 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:44:37.512 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:44:37.513 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:44:37.514 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-07 16:46:31.088 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-07 16:46:31.158 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-07 16:46:31.168 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-07 16:46:31.170 -03:00 [INF] Hosting environment: Development
+2023-07-07 16:46:31.171 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
