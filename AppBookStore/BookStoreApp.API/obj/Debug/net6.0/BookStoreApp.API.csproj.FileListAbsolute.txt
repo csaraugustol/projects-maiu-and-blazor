@@ -278,3 +278,5 @@ D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\bin\Deb
 D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\bin\Debug\net6.0\AutoMapper.dll
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

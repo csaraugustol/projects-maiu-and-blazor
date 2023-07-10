@@ -1,0 +1,92 @@
+2023-07-10 09:39:19.796 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 09:39:19.855 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 09:39:19.863 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 09:39:19.864 -03:00 [INF] Hosting environment: Development
+2023-07-10 09:39:19.865 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 10:11:33.617 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 10:11:33.640 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 10:11:33.643 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 10:11:33.644 -03:00 [INF] Hosting environment: Development
+2023-07-10 10:11:33.646 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 10:18:20.979 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 10:18:21.005 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 10:18:21.008 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 10:18:21.009 -03:00 [INF] Hosting environment: Development
+2023-07-10 10:18:21.010 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 10:52:34.212 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 10:52:34.241 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 10:52:34.245 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 10:52:34.246 -03:00 [INF] Hosting environment: Development
+2023-07-10 10:52:34.246 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 10:54:01.271 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[BookStoreApp.API.Data.Author, BookStoreApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[BookStoreApp.API.Models.Author.AuthorReadOnlyDto, BookStoreApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Author -> AuthorReadOnlyDto
+BookStoreApp.API.Data.Author -> BookStoreApp.API.Models.Author.AuthorReadOnlyDto
+   at lambda_method78(Closure , Author , AuthorReadOnlyDto , ResolutionContext )
+   at lambda_method77(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method77(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BookStoreApp.API.Controllers.AuthorsController.GetAuthors() in D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\Controllers\AuthorsController.cs:line 32
+   at lambda_method70(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-10 10:54:28.803 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[BookStoreApp.API.Data.Author, BookStoreApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[BookStoreApp.API.Models.Author.AuthorReadOnlyDto, BookStoreApp.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Author -> AuthorReadOnlyDto
+BookStoreApp.API.Data.Author -> BookStoreApp.API.Models.Author.AuthorReadOnlyDto
+   at lambda_method78(Closure , Author , AuthorReadOnlyDto , ResolutionContext )
+   at lambda_method77(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method77(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BookStoreApp.API.Controllers.AuthorsController.GetAuthors() in D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\Controllers\AuthorsController.cs:line 32
+   at lambda_method70(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-10 10:55:48.885 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 10:55:48.919 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 10:55:48.923 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 10:55:48.925 -03:00 [INF] Hosting environment: Development
+2023-07-10 10:55:48.925 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 11:28:38.872 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 11:28:38.913 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 11:28:38.917 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 11:28:38.918 -03:00 [INF] Hosting environment: Development
+2023-07-10 11:28:38.919 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
