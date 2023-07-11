@@ -321,3 +321,23 @@ Error Number:2627,State:1,Class:14
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2023-07-10 14:56:51.232 -03:00 [WRN] Registro não encontrado: Método GetBook - ID: 2
+2023-07-10 15:02:40.724 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 15:02:40.760 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 15:02:40.766 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 15:02:40.768 -03:00 [INF] Hosting environment: Development
+2023-07-10 15:02:40.770 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 15:17:04.280 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 15:17:04.318 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 15:17:04.326 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 15:17:04.327 -03:00 [INF] Hosting environment: Development
+2023-07-10 15:17:04.328 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 15:20:11.170 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 15:20:11.198 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 15:20:11.202 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 15:20:11.202 -03:00 [INF] Hosting environment: Development
+2023-07-10 15:20:11.203 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-10 15:22:51.270 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-10 15:22:51.301 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-10 15:22:51.305 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-10 15:22:51.309 -03:00 [INF] Hosting environment: Development
+2023-07-10 15:22:51.312 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
