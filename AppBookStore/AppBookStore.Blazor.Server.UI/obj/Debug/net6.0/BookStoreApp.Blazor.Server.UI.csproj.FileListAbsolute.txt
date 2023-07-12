@@ -1,0 +1,8 @@
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.csproj.AssemblyReference.cache
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.AssemblyInfoInputs.cache
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.AssemblyInfo.cs
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.csproj.CoreCompileInputs.cache
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.MvcApplicationPartsAssemblyInfo.cache
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.RazorAssemblyInfo.cache
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\BookStoreApp.Blazor.Server.UI.RazorAssemblyInfo.cs

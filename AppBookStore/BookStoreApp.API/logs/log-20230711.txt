@@ -33,3 +33,39 @@
 2023-07-11 12:46:05.753 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
 2023-07-11 12:46:58.148 -03:00 [INF] Tentativa de registro para admin@bookstore.com.
 2023-07-11 12:50:20.261 -03:00 [INF] Tentativa de registro para admin@bookstore.com.
+2023-07-11 15:30:01.470 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-11 15:30:01.526 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-11 15:30:01.531 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 15:30:01.532 -03:00 [INF] Hosting environment: Development
+2023-07-11 15:30:01.533 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-11 16:04:24.780 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-11 16:04:24.856 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-11 16:04:24.862 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 16:04:24.864 -03:00 [INF] Hosting environment: Development
+2023-07-11 16:04:24.868 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-11 16:06:25.522 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-11 16:06:25.570 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-11 16:06:25.574 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 16:06:25.575 -03:00 [INF] Hosting environment: Development
+2023-07-11 16:06:25.576 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-11 16:07:39.089 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-11 16:07:39.134 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-11 16:07:39.137 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 16:07:39.138 -03:00 [INF] Hosting environment: Development
+2023-07-11 16:07:39.138 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-11 16:48:54.813 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-11 16:48:54.908 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-11 16:48:54.920 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 16:48:54.922 -03:00 [INF] Hosting environment: Development
+2023-07-11 16:48:54.923 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-11 16:51:16.500 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-11 16:51:16.589 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-11 16:51:16.597 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 16:51:16.598 -03:00 [INF] Hosting environment: Development
+2023-07-11 16:51:16.599 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-11 16:54:02.519 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-11 16:54:02.579 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-11 16:54:02.585 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 16:54:02.587 -03:00 [INF] Hosting environment: Development
+2023-07-11 16:54:02.587 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-11 16:55:14.532 -03:00 [INF] Tentativa de registro para teste@teste.com.

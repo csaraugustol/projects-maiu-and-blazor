@@ -1,5 +1,9 @@
-using AppBookStore.Blazor.Server.UI.Data;
+using AppBookStore.Blazor.Server.UI.Providers;
+using AppBookStore.Blazor.Server.UI.Services.Authentication;
+using AppBookStore.Blazor.Server.UI.Services.Base;
+using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +11,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddBlazoredLocalStorage();
+builder.Services.AddHttpClient<IClient, Client>(cl => cl.BaseAddress = new Uri("https://localhost:7259"));
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<ApiAuthenticationStateProvider>();
+builder.Services.AddScoped<AuthenticationStateProvider>(p =>
+                p.GetRequiredService<ApiAuthenticationStateProvider>());
 
 var app = builder.Build();
 
