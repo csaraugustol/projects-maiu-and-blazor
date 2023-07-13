@@ -1,12 +1,12 @@
-﻿@page "/authors/create"
+﻿@page "/authors/update/{id:int}"
 @inject IAuthorService authorService
 @inject NavigationManager navigationManager
 @attribute [Authorize(Roles = Roles.Administrator)]
 
-<h3>Novo Autor</h3>
+<h3>Editar Autor</h3>
 
 <div class="card-body">
-    <EditForm Model="AuthorModel" OnValidSubmit="HandleCreateAuthor">
+    <EditForm Model="AuthorModel" OnValidSubmit="HandleUpdateAuthor">
         <DataAnnotationsValidator />
         <ValidationSummary />
         <div class="form-group">
@@ -31,19 +31,30 @@
         </button>
         <button class="btn btn-primary" type="submit">
             <span class="oi oi-check"></span>
-            Criar Autor
+            Atualizar Autor
         </button>
-        
+
     </EditForm>
 </div>
 
 @code {
-    AuthorCreateDto AuthorModel = new AuthorCreateDto();
-    string message = string.Empty;
+    [Parameter]
+    public int id { get; set; }
 
-    public async Task HandleCreateAuthor()
+    AuthorUpdateDto AuthorModel = new AuthorUpdateDto();
+
+    protected override async Task OnInitializedAsync()
     {
-        var response = await authorService.Create(AuthorModel);
+        var response = await authorService.GetAuthorForUpdate(id);
+        if(response.Success)
+        {
+           AuthorModel = response.Data;
+        }
+    }
+
+    public async Task HandleUpdateAuthor()
+    {
+        var response = await authorService.Edit(id, AuthorModel);
         if (response.Success)
         {
             BackToList();

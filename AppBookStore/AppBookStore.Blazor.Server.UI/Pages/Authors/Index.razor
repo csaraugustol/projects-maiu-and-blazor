@@ -1,5 +1,6 @@
 ﻿@page "/authors/"
 @inject IAuthorService authorService
+@inject IJSRuntime js
 
 <h3>Autores</h3>
 
@@ -16,7 +17,10 @@
 }
 else
 {
-    <a href="/authors/create" class="btn btn-secondary"><span class="oi oi-plus" aria-hidden="true"></span> Novo</a>
+    
+    <AuthorizeView Roles="Administrator">
+        <a href="/authors/create" class="btn btn-secondary"><span class="oi oi-plus" aria-hidden="true"></span> Novo</a>
+    </AuthorizeView>
     <br />
     <table class="table table-responsive">
         <thead>
@@ -34,8 +38,10 @@ else
                     <td>@author.LastName</td>
                     <td>
                         <a href="/authors/details/@author.Id" class="btn btn-primary"><span class="oi oi-info" aria-hidden="true"></span></a>
-                        <a href="/authors/edit/@author.Id" class="btn btn-warning"><span class="oi oi-pencil" aria-hidden="true"></span></a>
-                        <a href="/authors/delete/@author.Id" class="btn btn-danger"><span class="oi oi-trash" aria-hidden="true"></span></a>
+                        <AuthorizeView Roles="Administrator">
+                            <a href="/authors/update/@author.Id" class="btn btn-warning"><span class="oi oi-pencil" aria-hidden="true"></span></a>
+                            <button @onclick=@(() => Delete(@author.Id)) class="btn btn-danger"><span class="oi oi-trash" aria-hidden="true"></span></button>
+                        </AuthorizeView>
                     </td>
                 </tr>
             }
@@ -54,6 +60,22 @@ else
         if(response.Success)
         {
             Authors = response.Data;
+        }
+    }
+
+    private async Task Delete(int authorId)
+    {
+        var author = Authors.First(q => q.Id == authorId);
+        var confirm = await js.InvokeAsync<bool>("confirm", $"Tem certeza que deseja deletar {author.FirstName} {author.LastName}?");
+
+        if(confirm)
+        {
+            var response = await authorService.Delete(authorId);
+
+            if (response.Success)
+            {
+                await OnInitializedAsync();
+            }
         }
     }
 }

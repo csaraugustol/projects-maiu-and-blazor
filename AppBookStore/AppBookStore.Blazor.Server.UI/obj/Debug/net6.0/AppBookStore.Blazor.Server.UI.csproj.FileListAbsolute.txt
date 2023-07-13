@@ -41,3 +41,5 @@ D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Serv
 D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\AppBookStore.Blazor.Server.UI.pdb
 D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\AppBookStore.Blazor.Server.UI.genruntimeconfig.cache
 D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\obj\Debug\net6.0\ref\AppBookStore.Blazor.Server.UI.dll
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\bin\Debug\net6.0\AutoMapper.dll
+D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.Server.UI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
