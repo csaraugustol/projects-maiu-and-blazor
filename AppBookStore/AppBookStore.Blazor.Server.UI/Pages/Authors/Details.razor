@@ -2,7 +2,7 @@
 @inject IAuthorService authorService
 @inject NavigationManager navegationManager
 
-<h3>Author Details</h3>
+<h3>Detalhes Autor</h3>
 
 <EditForm Model="AuthorModel">
     <fieldset disabled="true">
@@ -27,7 +27,7 @@
     @if (AuthorModel.Books == null || AuthorModel.Books.Any() == false)
     {
         <div class="alert alert-dismissible alert-secondary">
-            No Books for this Author
+            Não há livros desse autor.
         </div>
     }
     else
@@ -37,7 +37,7 @@
             <div class="card" style="width: 18rem;">
               <img src="@book.Image" class="card-img-top" alt="@book.Title">
               <div class="card-body">
-                <h5 class="card-title">@book.Title - @book.Price.ToString("C")</h5>
+                <h5 class="card-title">@book.Title - @book.Price.ToString("C2")</h5>
                 <p class="card-text"></p>
                 <a href="#" class="btn btn-primary">View Book</a>
               </div>
@@ -45,15 +45,15 @@
         }
     }
 
+    <button @onclick="BackToList" class="btn btn-outline-primary">
+        <span class="oi oi-x"></span>
+        Voltar
+    </button>
     <button @onclick="GoToEdit" class="btn btn-warning">
         <span class="oi oi-pencil"></span>
-        Edit Author
+        Editar
     </button>
-
-    <button @onclick="BackToList" class="btn btn-outline-secondary">
-        <span class="oi oi-media-skip-backward"></span>
-        Back To List
-    </button>
+    
 </EditForm>
 
 @code {

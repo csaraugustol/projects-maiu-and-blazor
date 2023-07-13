@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "B/xBCMXeqgwp7btPmRm/YTjp6lGPNH0Mm112SxAG80E=",
+  "Hash": "+bkpCBSqhWDv0EvlwV/lyAqB7GCMGM8g3DNH1sdgu7w=",
   "Source": "BookStoreApp.API",
   "BasePath": "_content/BookStoreApp.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BookStoreApp.API\\wwwroot",
+      "Source": "BookStoreApp.API",
+      "ContentRoot": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\BookStoreApp.API\\wwwroot\\",
+      "BasePath": "_content/BookStoreApp.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

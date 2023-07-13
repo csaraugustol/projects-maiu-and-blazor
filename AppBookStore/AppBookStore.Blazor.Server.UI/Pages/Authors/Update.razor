@@ -41,18 +41,18 @@
     [Parameter]
     public int id { get; set; }
 
-    AuthorUpdateDto AuthorModel = new AuthorUpdateDto();
+    private AuthorUpdateDto AuthorModel = new AuthorUpdateDto();
 
-    protected override async Task OnInitializedAsync()
+    protected async override Task OnInitializedAsync()
     {
         var response = await authorService.GetAuthorForUpdate(id);
-        if(response.Success)
+        if (response.Success)
         {
-           AuthorModel = response.Data;
+            AuthorModel = response.Data;
         }
     }
 
-    public async Task HandleUpdateAuthor()
+    private async Task HandleUpdateAuthor()
     {
         var response = await authorService.Edit(id, AuthorModel);
         if (response.Success)
