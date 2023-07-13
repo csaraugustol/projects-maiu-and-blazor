@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.Server.UI/Pages/Books/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcVXBkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.Server.UI/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

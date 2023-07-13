@@ -2652,3 +2652,179 @@ Error Number:2627,State:1,Class:14
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-13 15:25:31.581 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 15:25:31.644 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 15:25:31.651 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 15:25:31.652 -03:00 [INF] Hosting environment: Development
+2023-07-13 15:25:31.654 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 15:30:44.503 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 15:30:44.618 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 15:30:44.627 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 15:30:44.630 -03:00 [INF] Hosting environment: Development
+2023-07-13 15:30:44.632 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 15:31:59.859 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookStoreApp.API.Data.BookStoreDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violação da restrição UNIQUE KEY 'UQ__Books__447D36EAA4E7468B'. Não é possível inserir a chave duplicada no objeto 'dbo.Books'. O valor de chave duplicada é (Isbn).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7ecb34ba-12e0-4b4d-a62a-3f39a49e5dab
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violação da restrição UNIQUE KEY 'UQ__Books__447D36EAA4E7468B'. Não é possível inserir a chave duplicada no objeto 'dbo.Books'. O valor de chave duplicada é (Isbn).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7ecb34ba-12e0-4b4d-a62a-3f39a49e5dab
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-07-13 15:31:59.976 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violação da restrição UNIQUE KEY 'UQ__Books__447D36EAA4E7468B'. Não é possível inserir a chave duplicada no objeto 'dbo.Books'. O valor de chave duplicada é (Isbn).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7ecb34ba-12e0-4b4d-a62a-3f39a49e5dab
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BookStoreApp.API.Controllers.BooksController.PostBook(BookCreateDto bookDto) in D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\Controllers\BooksController.cs:line 124
+   at lambda_method114(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-13 15:35:53.009 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 15:35:53.115 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 15:35:53.125 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 15:35:53.127 -03:00 [INF] Hosting environment: Development
+2023-07-13 15:35:53.128 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 15:36:52.763 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 15:36:52.856 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 15:36:52.862 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 15:36:52.864 -03:00 [INF] Hosting environment: Development
+2023-07-13 15:36:52.865 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 15:52:33.783 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 15:52:33.850 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 15:52:33.857 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 15:52:33.858 -03:00 [INF] Hosting environment: Development
+2023-07-13 15:52:33.859 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:02:39.948 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:02:40.049 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:02:40.054 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:02:40.057 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:02:40.057 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:04:57.849 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:04:57.914 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:04:57.922 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:04:57.933 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:04:57.934 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:07:30.817 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:07:30.894 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:07:30.900 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:07:30.902 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:07:30.905 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:28:05.080 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:28:05.107 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:28:05.112 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:28:05.114 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:28:05.115 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:30:25.376 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:30:25.402 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:30:25.405 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:30:25.405 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:30:25.406 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:30:36.673 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:30:36.723 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:30:36.728 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:30:36.730 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:30:36.730 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:30:52.970 -03:00 [INF] Tentativa de registro para admin@bookstore.com.
+2023-07-13 16:30:53.820 -03:00 [INF] Tentativa de registro para admin@bookstore.com.
+2023-07-13 16:33:36.716 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:33:36.781 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:33:36.787 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:33:36.788 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:33:36.790 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:34:12.238 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:34:12.299 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:34:12.306 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:34:12.307 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:34:12.309 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:40:21.723 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:40:21.750 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:40:21.755 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:40:21.758 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:40:21.760 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\
+2023-07-13 16:40:40.785 -03:00 [INF] Now listening on: https://localhost:7259
+2023-07-13 16:40:41.026 -03:00 [INF] Now listening on: http://localhost:5101
+2023-07-13 16:40:41.031 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-13 16:40:41.033 -03:00 [INF] Hosting environment: Development
+2023-07-13 16:40:41.034 -03:00 [INF] Content root path: D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\BookStoreApp.API\

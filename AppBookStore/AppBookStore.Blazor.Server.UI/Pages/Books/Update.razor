@@ -1,20 +1,13 @@
-﻿@page "/books/create"
-@inject IBookService bookService
+﻿@page "/books/update/{id:int}"
 @inject IAuthorService authorService
+@inject IBookService bookService
 @inject NavigationManager navigationManager
 @attribute [Authorize(Roles = Roles.Administrator)]
 
-<h3>Novo Livro</h3>
-
-@if (!string.IsNullOrEmpty(message))
-{
-    <div class="alert alert-danger">
-        <p>@message</p>
-    </div>
-}
+<h3>Editar Livro</h3>
 
 <div class="card-body">
-    <EditForm Model="BookModel" OnValidSubmit="HandleCreateBook">
+    <EditForm Model="BookModel" OnValidSubmit="HandleUpdateBook">
         <DataAnnotationsValidator />
         <ValidationSummary />
         <div class="form-group">
@@ -69,43 +62,32 @@
             <span class="oi oi-check"></span>
             Criar Livro
         </button>
-        
+
     </EditForm>
 </div>
 
 @code {
-    private BookCreateDto BookModel = new();
+    [Parameter]
+    public int id { get; set; }
+    private BookUpdateDto BookModel = new BookUpdateDto();
     private List<AuthorReadOnlyDto> Authors = new();
-    private string UploadFileWarning = string.Empty;
     private string img = string.Empty;
+    private string UploadFileWarning = string.Empty;
     private long maxFileSize = 1024 * 1024 * 5;
-    string message = string.Empty;
 
-    protected override async Task OnInitializedAsync()
+    protected async override Task OnInitializedAsync()
     {
-        var response = await authorService.GetAuthors();
-
-        if(response.Success)
+        var bookResponse = await bookService.GetBookForUpdate(id);
+        if (bookResponse.Success)
         {
-            Authors = response.Data;
+            BookModel = bookResponse.Data;
+            img = BookModel.Image;
         }
-    }
 
-    public async Task HandleCreateBook()
-    {
-        //var books = await bookService.GetBooks();
-        //var booksExists = books.Data.Find(q => q.Isbn == BookModel.Isbn);
-
-        //if (booksExists != null)
-        //{
-        //    message = "Isbn já está em uso.";
-        //    return;
-        //}
-
-        var response = await bookService.Create(BookModel);
-        if (response.Success)
+        var authorResponse = await authorService.GetAuthors();
+        if (authorResponse.Success)
         {
-            BackToList();
+            Authors = authorResponse.Data;
         }
     }
 
@@ -117,14 +99,16 @@
             if (file.Size > maxFileSize)
             {
                 UploadFileWarning = "Arquivo muito grande para carregamento.";
-
+                return;
             }
+
             var ext = System.IO.Path.GetExtension(file.Name);
             if ((ext.ToLower().Contains("jpg") || ext.ToLower().Contains("png") || ext.ToLower().Contains("jpeg")) == false)
             {
                 UploadFileWarning = "Por favor, selecione um formato válido: (*.jpg | *.png).";
                 return;
             }
+
             var byteArray = new byte[file.Size];
             await file.OpenReadStream().ReadAsync(byteArray);
             string imageType = file.ContentType;
@@ -136,8 +120,18 @@
         }
     }
 
+    private async Task HandleUpdateBook()
+    {
+        var response = await bookService.Edit(id, BookModel);
+        if (response.Success)
+        {
+            BackToList();
+        }
+    }
+
     private void BackToList()
     {
         navigationManager.NavigateTo("/books/");
     }
+
 }

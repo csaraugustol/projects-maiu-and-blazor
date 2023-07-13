@@ -30,6 +30,12 @@
             <label for="Summary">Sumário</label>
             <InputTextArea class="form-control" @bind-Value="BookModel.Summary" id="Summary" />
         </div>
+        <div class="form-group">
+            <label>Foto da capa do livro</label>
+            <div>
+                <img src="@BookModel.Image" width="100" heigth="100" class="img-thumbnail">
+            </div>
+        </div>
         <br/>
     </fieldset>
 
