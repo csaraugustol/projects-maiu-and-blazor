@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AppBookStore.Blazor.WebAssembley.UI
+build_property.RootNamespace = AppBookStore.Blazor.WebAssembley.UI
+build_property.ProjectDir = D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.WebAssembley.UI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ProjetosEstudo\projects-maiu-and-blazor\AppBookStore\AppBookStore.Blazor.WebAssembley.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Authors/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Authors/Details.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xEZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Authors/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Authors/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yc1xVcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Books/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Books/Details.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Books/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Books/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcVXBkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Users/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Users/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9nb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Pages/Users/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-glvcwhg568
+
+[D:/ProjetosEstudo/projects-maiu-and-blazor/AppBookStore/AppBookStore.Blazor.WebAssembley.UI/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3i0a6nw1f4

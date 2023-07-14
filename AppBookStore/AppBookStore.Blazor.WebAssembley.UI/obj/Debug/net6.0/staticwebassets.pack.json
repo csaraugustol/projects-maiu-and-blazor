@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\obj\\Debug\\net6.0\\build-gz\\z+tOTzg2.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\AppBookStore.Blazor.WebAssembley.UI.styles.css",
+      "PackagePath": "staticwebassets\\AppBookStore.Blazor.WebAssembley.UI.styles.css"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\obj\\Debug\\net6.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\obj\\Debug\\net6.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "D:\\ProjetosEstudo\\projects-maiu-and-blazor\\AppBookStore\\AppBookStore.Blazor.WebAssembley.UI\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AppBookStore.Blazor.WebAssembley.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.AppBookStore.Blazor.WebAssembley.UI.props",
+      "PackagePath": "build\\AppBookStore.Blazor.WebAssembley.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.AppBookStore.Blazor.WebAssembley.UI.props",
+      "PackagePath": "buildMultiTargeting\\AppBookStore.Blazor.WebAssembley.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.AppBookStore.Blazor.WebAssembley.UI.props",
+      "PackagePath": "buildTransitive\\AppBookStore.Blazor.WebAssembley.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

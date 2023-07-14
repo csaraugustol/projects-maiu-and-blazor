@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AppBookStore.Blazor.WebAssembley.UI.props" />
+</Project>

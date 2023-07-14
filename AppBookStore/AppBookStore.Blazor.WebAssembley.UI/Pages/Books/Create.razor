@@ -1,0 +1,143 @@
+﻿@page "/books/create"
+@inject IBookService bookService
+@inject IAuthorService authorService
+@inject NavigationManager navigationManager
+@attribute [Authorize(Roles = Roles.Administrator)]
+
+<h3>Novo Livro</h3>
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert alert-danger">
+        <p>@message</p>
+    </div>
+}
+
+<div class="card-body">
+    <EditForm Model="BookModel" OnValidSubmit="HandleCreateBook">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="form-group">
+            <label for="Title">Título</label>
+            <InputText class="form-control" @bind-Value="BookModel.Title" id="Title" />
+        </div>
+        <div class="form-group mt-3">
+            <label for="Bio">Isbn</label>
+            <InputText class="form-control" @bind-Value="BookModel.Isbn" id="Isbn" />
+            <ValidationMessage For="@(()=> BookModel.Isbn)" />
+        </div>
+        <div class="form-group mt-3">
+            <label for="Price">Preço</label>
+            <InputNumber class="form-control" @bind-Value="BookModel.Price" id="Price" />
+            <ValidationMessage For="@(()=> BookModel.Price)" />
+        </div>
+        <div class="form-group mt-3">
+            <label for="year">Ano</label>
+            <InputNumber class="form-control" @bind-Value="BookModel.Year" id="year" />
+            <ValidationMessage For="@(()=> BookModel.Year)" />
+        </div>
+        <div class="form-group mt-3">
+            <label for="Summary">Sumário</label>
+            <InputTextArea class="form-control" @bind-Value="BookModel.Summary" id="Summary" />
+            <ValidationMessage For="@(()=> BookModel.Summary)" />
+        </div>
+        <div class="form-group mt-3">
+            <label for="author">Autor</label>
+            <InputSelect @bind-Value="BookModel.AuthorId" class="form-select" id="author" required>
+                <option value="">-- Selecione um Autor --</option>
+                @foreach (var author in Authors)
+                {
+                    <option value="@author.Id">@author.FirstName @author.LastName</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => BookModel.AuthorId)" />
+        </div>
+        <div class="form-group mt-3">
+            <label>Foto da capa do livro</label>
+            <div>
+                <InputFile OnChange="HandleFileSelection" accept=".png, .jpg" />
+                <img src="@img" width="100" heigth="100" class="img-thumbnail">
+                <p class="text-danger">@UploadFileWarning</p>
+            </div>
+        </div>
+
+        <button @onclick="BackToList" class="btn btn-outline-danger">
+            <span class="oi oi-x"></span>
+            Cancelar
+        </button>
+        <button class="btn btn-primary" type="submit">
+            <span class="oi oi-check"></span>
+            Criar Livro
+        </button>
+        
+    </EditForm>
+</div>
+
+@code {
+    private BookCreateDto BookModel = new();
+    private List<AuthorReadOnlyDto> Authors = new();
+    private string UploadFileWarning = string.Empty;
+    private string img = string.Empty;
+    private long maxFileSize = 1024 * 1024 * 5;
+    string message = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await authorService.GetAuthors();
+
+        if(response.Success)
+        {
+            Authors = response.Data;
+        }
+    }
+
+    public async Task HandleCreateBook()
+    {
+        //var books = await bookService.GetBooks();
+        //var booksExists = books.Data.Find(q => q.Isbn == BookModel.Isbn);
+
+        //if (booksExists != null)
+        //{
+        //    message = "Isbn já está em uso.";
+        //    return;
+        //}
+
+        var response = await bookService.Create(BookModel);
+        if (response.Success)
+        {
+            BackToList();
+        }
+    }
+
+    private async Task HandleFileSelection(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file != null)
+        {
+            if (file.Size > maxFileSize)
+            {
+                UploadFileWarning = "Arquivo muito grande para carregamento.";
+
+            }
+            var ext = System.IO.Path.GetExtension(file.Name);
+            if ((ext.ToLower().Contains("jpg") || ext.ToLower().Contains("png") || ext.ToLower().Contains("jpeg")) == false)
+            {
+                UploadFileWarning = "Por favor, selecione um formato válido: (*.jpg | *.png).";
+                return;
+            }
+            var byteArray = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(byteArray);
+            string imageType = file.ContentType;
+            string base64String = Convert.ToBase64String(byteArray);
+
+            BookModel.ImageData = base64String;
+            BookModel.OriginalImageName = file.Name;
+            img = $"data:{imageType}; base64, {base64String}";
+        }
+    }
+
+    private void BackToList()
+    {
+        navigationManager.NavigateTo("/books/");
+    }
+}
